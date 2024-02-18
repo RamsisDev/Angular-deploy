@@ -1,0 +1,21 @@
+<h2>DBZ ESCENCIA</h2>
+<hr>
+
+<div class="row">
+
+  <div class="col">
+
+    <app-list-dbz [listaPersonajes]="personajes"
+    (personjeBorrado)="borrarPersonaje($event)">
+
+    </app-list-dbz>
+  </div>
+
+  <div class="col">
+
+    <app-formul-dbz (onNewCharacter)="nuevoPersonaje($event)">
+
+    </app-formul-dbz>
+  </div>
+
+</div>
